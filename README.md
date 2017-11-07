@@ -1,5 +1,5 @@
 # Logo | Image | Hover - Particle for Gantry 5
-This project contains a Gantry Particle and adds a very powerful image render and animation component to the Gantry templating framework. **Logo | Image | Hover** is an advanced version of the standard "Logo / Image" particle. However, it's much more flexible and encapsulates the parameterization of many fancy CSS3 rollover, hover and transition effects within. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMS systems are supported:
+This project contains a Gantry Particle and adds a very powerful image render and animation component to the Gantry templating framework. **Logo | Image | Hover** is an advanced version of the standard "Logo / Image" particle. However, it is much more flexible and encapsulates the parameterization of many fancy CSS3 rollover, hover and transition effects within. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMS systems are supported:
 * Joomla
 * Wordpress
 * Grav
@@ -116,7 +116,7 @@ None
 [Gantry 5 Framework](http://gantry.org/)
 
 ## Credits
-Thanks to Google for the Google Plus Platform API and the Gantry 5 Framework team for providing a modern templating framework.
+Thanks to the Gantry 5 team for providing a modern templating framework.
 
 ## by [thex](https://github.com/thexmanxyz)
 Copyright (c) 2017, free to use in personal and commercial software as per the [license](/LICENSE.md).
