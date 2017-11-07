@@ -1,5 +1,5 @@
 # Logo | Image | Hover - Particle for Gantry 5
-This project contains a Gantry Particle and adds a very powerful image render and animation component to the Gantry templating framework. **Logo | Image | Hover** is an advanced version of the standard "Logo / Image" particle. However, it is much more flexible and encapsulates the parameterization of many fancy CSS3 rollover, hover and transition effects within. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMS systems are supported:
+This project contains a Gantry Particle and adds a very powerful image render and animation component to the Gantry templating framework. **Logo | Image | Hover** is an advanced version of the standard *Logo / Image Particle*. However, it is much more flexible and encapsulates the parameterization of many fancy CSS3 rollover, hover and transition effects within. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMS systems are supported:
 * Joomla
 * Wordpress
 * Grav
@@ -25,12 +25,12 @@ ___
 ___
 
 ## Automatic Installation (Joomla only)
-1. Download the Plugin of the Logo | Image | Hover Particle for **Hydrogen or Helium**.
+1. Download the Plugin of the *Logo | Image | Hover Particle* for **Hydrogen or Helium**.
 2. Install it over the Joomla Plugin System.
 3. Modify the `custom.scss` file located under `/[GANTRY_THEME]/custom/scss` and add the following line `@import "logo-image-hover";` at the end. Please check the list below to determine where the template folder for your CMS is located.
 
 ## Manual Installation
-1. Download the **Default or Legacy Package** of the Logo | Image | Hover Particle. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
+1. Download the **Default or Legacy Package** of the *Logo | Image | Hover Particle*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
 2. Extract the files.
 3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/[GANTRY_THEME]/custom/particles`. Please check the list below to determine where the template folder for your CMS is located.
 4. Copy the `.js` file to the folder `/[GANTRY_THEME]/custom/js`. Create it if it does not exist.
@@ -77,7 +77,7 @@ Please be aware that the template folder path varies in dependence of the used C
   * Deferred
 
 ## Showroom
-Insight of the Logo | Image | Hover - Gantry Particle configuration:
+Insight of the *Logo | Image | Hover - Gantry Particle* configuration:
 
 **Backend (1)** - *[General](/screenshots/backend_general.png)*
 
