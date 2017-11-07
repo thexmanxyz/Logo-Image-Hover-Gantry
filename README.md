@@ -66,7 +66,7 @@ Please be aware that the template folder path varies in dependence of the used C
 * Image Configuration
   * two images with overlay supported for fancy transition, timer and rollover effects
   * alt and title attribute configurable for both images
-* many different CSS3 effects included (over 150 variations)
+* many different CSS3 effects included (**over 150 variations**)
   * e.g. Zoom-In, Zoom-Out, Slide, Rotate, Blur, Unblur, Sepia, Gray, Pulse, ...
   * predefined effect slots for custom adaptions available 
 * JS Priority and Placement (head or footer)
@@ -117,6 +117,8 @@ None
 
 ## Credits
 Thanks to the Gantry 5 team for providing a modern templating framework.
+
+Thanks also to Naoya of [NxWorld](https://www.nxworld.net/tips/css-image-hover-effects.html) and [Rich Bradshaw](http://css3.bradshawenterprises.com/cfimg/) for the inspiration in terms of the the used CSS3 effects.
 
 ## by [thex](https://github.com/thexmanxyz)
 Copyright (c) 2017, free to use in personal and commercial software as per the [license](/LICENSE.md).
