@@ -72,9 +72,9 @@ for /F "tokens=1,2 delims=#" %%a in ('"prompt #$H#$E# & echo on & for %%b in (1)
 )
 
 echo.
-echo -----------------------------
+echo -----------------------------------
 echo # %prj_fullname% #
-echo -----------------------------
+echo -----------------------------------
 echo.
 echo %msg_start%
 
