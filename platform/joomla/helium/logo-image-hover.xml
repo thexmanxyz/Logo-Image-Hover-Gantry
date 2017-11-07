@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="file" method="upgrade" version="3.0">
+    <name>Logo | Imager | Hover - Gantry Particle (Helium)</name>
+    <version>1.0.0</version>
+    <creationDate>07.11.2017</creationDate>
+    <author>Andreas Kar</author>
+    <authorEmail>andreas.kar@gmx.at</authorEmail>
+	<authorUrl></authorUrl>
+    <copyright>© 2017 Andreas Kar</copyright>
+    <license>MIT - see LICENSE.pdf</license>
+    <description>
+        <![CDATA[<div class="alert alert-info" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		<h3>Logo | Imager | Hover - Particle for Gantry 5 Framework</h3>
+		<span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
+		<p><b>NOTE</b>:&nbsp;This particle is installed for the G5 Helium.<br />If you want to install the particle on a different Gantry 5 template, you must manually copy the two files <code>logo-image-hover.yaml</code> and <code>logo-image-hover.html.twig</code> in <code>/templates/[TEMPLATE]/custom/particles</code>.<br>Moreover, you have to copy <code>_logo-image-hover.scss</code> to <code>/templates/[TEMPLATE]/custom/scss</code> and <code>logo-image-hover.js</code> to <code>/templates/[TEMPLATE]/custom/js</code>.</p></div>]]>
+    </description>
+    <fileset>
+        <files folder="particles" target="templates/g5_helium/custom/particles">
+			<filename>logo-image-hover.html.twig</filename>
+			<filename>logo-image-hover.yaml</filename>
+		</files>
+        <files folder="scss" target="templates/g5_helium/custom/scss">
+			<filename>_logo-image-hover.scss</filename>
+		</files>
+        <files folder="js" target="templates/g5_helium/custom/js">
+			<filename>logo-image-hover.js</filename>
+		</files>
+    </fileset>
+</extension>
