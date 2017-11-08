@@ -36,12 +36,12 @@
 {% set imageAlt = (particle.image.default.alt ? ' alt="' ~ particle.image.default.alt ~ '"' : '') %}
 {% set imageHoverAlt = (particle.image.hover.alt ? ' alt="' ~ particle.image.hover.alt ~ '"' : '') %}
 
-{% set effectMulti = particle.effect.multi %}
-{% set effectSingle = particle.effect.single %}
+{% set effectMulti = particle.effect.multi|default('t1') %}
+{% set effectSingle = particle.effect.single|default('none') %}
 {% set ofClass =  (particle.effect.overflow ? ' of-hidden' : '') %}
 
 {% set text = particle.text.text|default('Logo / Image') %}
-{% set tStyle = particle.text.style %}
+{% set tStyle = particle.text.style|default('none') %}
 {% set tClass = (particle.text.css.class ? ' class="' ~ particle.text.css.class ~ '"' : '') %}
 {% set aTitle = (particle.link.title ? ' title="' ~ particle.link.title ~ '"' : '') %}
 {% set aUrl = url(particle.link.url)|default(gantry.siteUrl()) %}
