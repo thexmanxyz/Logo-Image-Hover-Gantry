@@ -54,7 +54,7 @@ Please be aware that the template folder path varies in dependence of the used C
 2. Switch to **Layout** and add the new appearing Particle called **Logo | Image | Hover** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
 3. Configure the appearance according to your favor.
  
-## Supported API Parameters and Particle Options
+## Supported Parameters and Particle Options
 * Container Attributes
 * Custom CSS Classes
   * for both, the container and the image text
