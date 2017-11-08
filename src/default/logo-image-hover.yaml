@@ -133,37 +133,37 @@ form:
             fields:
                 image.default.url:
                   type: input.imagepicker
-                  label: Image
+                  label: Image (1)
                   description: Select the default logo or image.
 
                 image.default.title:
                   type: input.text
-                  label: Title Text
+                  label: Title Text (1)
                   description: The 'title' attribute text for the default image.
-                  placeholder: Title Attribute Text
+                  placeholder: Title Attribute Text (1)
 
                 image.default.alt:
                   type: input.text
-                  label: Alt Text
+                  label: Alt Text (1)
                   description: The 'alt' attribute text for the default image.
-                  placeholder: Alt Attribute Text
+                  placeholder: Alt Attribute Text (1)
 
                 image.hover.url:
                   type: input.imagepicker
-                  label: Image (Hover)
+                  label: Image (2)
                   description: Select the second logo or image for hover and timer effects.
 
                 image.hover.title:
                   type: input.text
-                  label: Title Text (Hover)
-                  description: The 'title' attribute text for the hover image.
-                  placeholder: Title Attribute Text (Hover)
+                  label: Title Text (2)
+                  description: The 'title' attribute text for the second image.
+                  placeholder: Title Attribute Text (2)
 
                 image.hover.alt:
                   type: input.text
-                  label: Alt Text (Hover)
-                  description: The 'alt' attribute text for the hover image.
-                  placeholder: Alt Attribute Text (Hover)
+                  label: Alt Text (2)
+                  description: The 'alt' attribute text for the second image.
+                  placeholder: Alt Attribute Text (2)
 
         tab_effect:
             label: Effect
