@@ -131,39 +131,49 @@ form:
         tab_image:
             label: Image
             fields:
+                _info_first_image:
+                  type: separator.note
+                  class: alert alert-info
+                  content: Configuration of the default / standard image.
+
                 image.default.url:
                   type: input.imagepicker
-                  label: Image (1)
+                  label: Image
                   description: Select the default logo or image.
 
                 image.default.title:
                   type: input.text
-                  label: Title Text (1)
+                  label: Title Text
                   description: The 'title' attribute text for the default image.
-                  placeholder: Title Attribute Text (1)
+                  placeholder: Title Attribute Text
 
                 image.default.alt:
                   type: input.text
-                  label: Alt Text (1)
+                  label: Alt Text
                   description: The 'alt' attribute text for the default image.
-                  placeholder: Alt Attribute Text (1)
+                  placeholder: Alt Attribute Text
+
+                _info_second_image:
+                  type: separator.note
+                  class: alert alert-info
+                  content: Configuration of the second (hover) image.
 
                 image.hover.url:
                   type: input.imagepicker
-                  label: Image (2)
+                  label: Image
                   description: Select the second logo or image for hover and timer effects.
 
                 image.hover.title:
                   type: input.text
-                  label: Title Text (2)
+                  label: Title Text
                   description: The 'title' attribute text for the second image.
-                  placeholder: Title Attribute Text (2)
+                  placeholder: Title Attribute Text
 
                 image.hover.alt:
                   type: input.text
-                  label: Alt Text (2)
+                  label: Alt Text
                   description: The 'alt' attribute text for the second image.
-                  placeholder: Alt Attribute Text (2)
+                  placeholder: Alt Attribute Text
 
         tab_effect:
             label: Effect

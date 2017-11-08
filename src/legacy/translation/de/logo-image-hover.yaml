@@ -131,39 +131,49 @@ form:
       type: container.set
       label: Image
       fields:
+        _info_first_image:
+          type: separator.note
+          class: alert alert-info
+          content: Konfiguration des Standardbildes.
+
         image.default.url:
           type: input.imagepicker
-          label: Bild (1)
+          label: Bild
           description: Selektieren Sie das Standardbild oder Logo.
 
         image.default.title:
           type: input.text
-          label: Titel Text (1)
+          label: Titel Text
           description: Der 'title' Attribut Text für das Standardbild.
-          placeholder: Titel Attribut Text (1)
+          placeholder: Titel Attribut Text
 
         image.default.alt:
           type: input.text
-          label: Alt Text (1)
+          label: Alt Text
           description: Der 'alt' Attribut Text für das Standardbild.
-          placeholder: Alt Attribut Text (1)
+          placeholder: Alt Attribut Text
+
+        _info_second_image:
+          type: separator.note
+          class: alert alert-info
+          content: Konfiguration des zweiten (Hover) Bildes.
 
         image.hover.url:
           type: input.imagepicker
-          label: Bild (2)
+          label: Bild
           description: Selektieren Sie das zweite Bild oder Logo für Hover oder Timer Effekte.
 
         image.hover.title:
           type: input.text
-          label: Titel Text (2)
+          label: Titel Text
           description: Der 'title' Attribut Text für das zweite Bild.
-          placeholder: Titel Attribut Text (2)
+          placeholder: Titel Attribut Text
 
         image.hover.alt:
           type: input.text
-          label: Alt Text (2)
+          label: Alt Text
           description: Der 'alt' Attribut Text für das zweite Bild.
-          placeholder: Alt Attribut Text (2)
+          placeholder: Alt Attribut Text
 
     set_effect:
       type: container.set
