@@ -42,7 +42,7 @@
 
 {% set text = particle.text.text|default('Logo / Image') %}
 {% set tStyle = particle.text.style|default('none') %}
-{% set tClass = (particle.text.css.class ? ' class="' ~ particle.text.css.class ~ '"' : '') %}
+{% set tClass = (particle.text.css.class ? ' class="' ~ particle.text.css.class|e ~ '"' : '') %}
 {% set aTitle = (particle.link.title ? ' title="' ~ particle.link.title ~ '"' : '') %}
 {% set aUrl = url(particle.link.url)|default(gantry.siteUrl()) %}
 
