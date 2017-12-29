@@ -118,7 +118,7 @@ None
 ## Credits
 Thanks to the Gantry team for providing a modern templating framework.
 
-Thanks also to Naoya of [NxWorld](https://www.nxworld.net/tips/css-image-hover-effects.html) and [Rich Bradshaw](http://css3.bradshawenterprises.com/cfimg/) for the inspiration in terms of the the used CSS3 effects.
+Thanks to Naoya of [NxWorld](https://www.nxworld.net/tips/css-image-hover-effects.html) and [Rich Bradshaw](http://css3.bradshawenterprises.com/cfimg/) for the inspiration in terms of the the used CSS3 effects.
 
 ## by [thex](https://github.com/thexmanxyz)
 Copyright (c) 2017, free to use in personal and commercial software as per the [license](/LICENSE.md).
