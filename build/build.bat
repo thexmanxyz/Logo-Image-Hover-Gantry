@@ -1,7 +1,7 @@
 @echo off
 REM #######################################################
 REM #                                                     #
-REM #   Logo | Image | Hover - Particle for Gantry 5      #
+REM #   Logo | Image | Hover - Particle for Gantry        #
 REM #                                                     #
 REM #   Purpose: This project adds a powerful image /     #
 REM #            logo presentation particle to the        #

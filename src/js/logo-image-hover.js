@@ -1,6 +1,6 @@
 /*******************************************************
 *                                                     *
-*   Logo | Image | Hover - Particle for Gantry 5      *
+*   Logo | Image | Hover - Particle for Gantry        *
 *                                                     *
 *   Purpose: This project adds a powerful image /     *
 *            logo presentation particle to the        *

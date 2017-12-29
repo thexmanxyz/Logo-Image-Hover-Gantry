@@ -1,4 +1,4 @@
-# Logo | Image | Hover - Particle for Gantry 5
+# Logo | Image | Hover - Particle for Gantry
 This project contains a Gantry Particle and adds a very powerful image render and animation component to the Gantry templating framework. **Logo | Image | Hover** is an advanced version of the standard *Logo / Image Particle*. However, it is much more flexible and encapsulates the parameterization of many fancy CSS3 rollover, hover and transition effects within. Furthermore, it provides an easy, user friendly and GUI assisted configuration and integration. In the current revision the following CMS systems are supported:
 * Joomla
 * Wordpress
@@ -6,10 +6,10 @@ This project contains a Gantry Particle and adds a very powerful image render an
 
 ## Prerequisites
 * CMS (Joomla, Wordpress, Grav)
-* Gantry 5 Templating Framework and Theme
+* Gantry Templating Framework and Theme
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry 5 themes - Helium and Hydrogen. The latest Particle version is **v1.0.1**.
+Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry themes - Helium and Hydrogen. The latest Particle version is **v1.0.1**.
 ___
 **Default Particle:**
 [English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.1/lih.particle.only.EN.v1.0.1.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.1/lih.particle.only.DE.v1.0.1.zip)
@@ -113,10 +113,10 @@ Example for a basic image effect:
 None
 
 ## Dependencies
-[Gantry 5 Framework](http://gantry.org/)
+[Gantry Framework](http://gantry.org/)
 
 ## Credits
-Thanks to the Gantry 5 team for providing a modern templating framework.
+Thanks to the Gantry team for providing a modern templating framework.
 
 Thanks also to Naoya of [NxWorld](https://www.nxworld.net/tips/css-image-hover-effects.html) and [Rich Bradshaw](http://css3.bradshawenterprises.com/cfimg/) for the inspiration in terms of the the used CSS3 effects.
 
