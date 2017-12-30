@@ -57,18 +57,18 @@ Please be aware that the template folder path varies in dependence of the used C
 ## Supported Parameters and Particle Options
 * Container Attributes
 * Custom CSS Classes
-  * for both, the container and the image text
+  * for Container and Image Text
 * Output Rendering 
-  * Prioritized, Image only, Text only or both
+  * Prioritized, Image only, Text only or Both
 * URL Configuration for the Image and Text
   * Enable, Target and Title
 * Text Position and Custom Styling
 * Image Configuration
   * two images with overlay supported for fancy transition, timer and rollover effects
-  * alt and title attribute configurable for both images
+  * `alt` and `title` attribute configurable for both images
 * many different CSS3 effects included (**over 150 variations**)
   * e.g. Zoom-In, Zoom-Out, Slide, Rotate, Blur, Unblur, Sepia, Gray, Pulse, ...
-  * predefined effect slots for custom adaptions available 
+  * predefined Effect Slots for custom adaptions available 
 * JS Priority and Placement (head or footer)
 * JS Loading
   * Remote, Local and Default
