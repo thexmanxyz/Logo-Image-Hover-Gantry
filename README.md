@@ -64,8 +64,8 @@ Please be aware that the template folder path varies in dependence of the used C
   * Enable, Target and Title
 * Text Position and Custom Styling
 * Image Configuration
-  * two images with overlay supported for fancy transition, timer and rollover effects
-  * `alt` and `title` attribute configurable for both images
+  * two Images with Overlay supported for Fancy Transition, Timer and Rollover Effects
+  * `alt` and `title` Attribute configurable for both Images
 * many different CSS3 effects included (**over 150 variations**)
   * e.g. Zoom-In, Zoom-Out, Slide, Rotate, Blur, Unblur, Sepia, Gray, Pulse, ...
   * predefined Effect Slots for custom adaptions available 
