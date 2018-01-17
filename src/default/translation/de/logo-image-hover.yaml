@@ -43,6 +43,7 @@ form:
                   type: input.selectize
                   label: CSS Klassen
                   description: Setzen Sie eine Klasse für die individuelle Gestaltung.
+                  default: 'g-logo'
 
                 render:
                   type: select.select

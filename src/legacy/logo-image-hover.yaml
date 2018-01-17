@@ -41,6 +41,7 @@ form:
           type: input.selectize
           label: CSS Classes
           description: Set a specific CSS class on the HTML container for custom styling.
+          default: 'g-logo'
 
         render:
           type: select.select

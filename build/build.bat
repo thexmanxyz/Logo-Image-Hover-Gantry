@@ -22,7 +22,7 @@ set langs_upper=EN, DE
 set default_lang=EN
 
 set prj_id=lih
-set prj_rev=v1.0.2
+set prj_rev=v1.0.4
 set prj_name=logo-image-hover
 set prj_fullname=Logo / Image / Hover - Particle
 
