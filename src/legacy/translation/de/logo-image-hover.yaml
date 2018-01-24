@@ -17,6 +17,10 @@ description: Rendert ein Logo oder ein Bild Hover- / Übergangseffekten.
 type: particle
 icon: fa-file-image-o
 
+configuration:
+  caching:
+    type: static
+
 form:
   fields:
     enabled:
