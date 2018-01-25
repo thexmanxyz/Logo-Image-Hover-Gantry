@@ -13,7 +13,7 @@
 #######################################################
 
 name: Logo | Image | Hover
-description: Displays a logo or an image with hover / transition effect.
+description: Displays a logo or an image with hover/transition effect.
 type: particle
 icon: fa-file-image-o
 
