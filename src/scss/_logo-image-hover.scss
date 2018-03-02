@@ -1,4 +1,3 @@
-
 /*******************************************************
 *                                                     *
 *   Logo | Image | Hover - Particle for Gantry        *
@@ -18,6 +17,9 @@
 }
 
 .g-logo-image-hover{
+    
+    position: relative;
+    
     @keyframes fadeAnimation {
         0% { opacity: 1; }
         45% { opacity: 1; }
