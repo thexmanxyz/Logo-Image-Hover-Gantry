@@ -18,10 +18,10 @@ ___
 [English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/lih.particle.only.legacy.EN.v1.0.7.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/lih.particle.only.legacy.DE.v1.0.7.zip)
 
 **Joomla Plugin - Hydrogen:**
-[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/gpb.j3.hydrogen.EN.v1.0.7.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/gpb.j3.hydrogen.DE.v1.0.7.zip)
+[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/lih.j3.hydrogen.EN.v1.0.7.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/lih.j3.hydrogen.DE.v1.0.7.zip)
 
 **Joomla Plugin - Helium:**
-[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/gpb.j3.helium.EN.v1.0.7.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/gpb.j3.helium.DE.v1.0.7.zip)
+[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/lih.j3.helium.EN.v1.0.7.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.0.7/lih.j3.helium.DE.v1.0.7.zip)
 ___
 
 ## Automatic Installation (Joomla only)
