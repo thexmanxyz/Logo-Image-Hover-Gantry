@@ -5,25 +5,25 @@
     <creationDate>02.03.2018</creationDate>
     <author>Andreas Kar</author>
     <authorEmail>andreas.kar@gmx.at</authorEmail>
-	<authorUrl></authorUrl>
+    <authorUrl></authorUrl>
     <copyright>© 2017 Andreas Kar</copyright>
     <license>MIT - see LICENSE.pdf</license>
     <description>
         <![CDATA[<div class="alert alert-info" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-		<h3>Logo | Imager | Hover - Particle for Gantry Framework</h3>
-		<span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
-		<p><b>INFO</b>:&nbsp;Dieses Particle wurde für Gantry Hydrogen installiert.<br />Wenn Sie das Particle für ein anderes Gantry Template installieren möchten, so müssen Sie die zwei folgenden Dateien <code>logo-image-hover.yaml</code> und <code>logo-image-hover.html.twig</code> in den Ordner <code>/templates/[TEMPLATE]/custom/particles</code> kopieren.<br>Außerdem muss die Datei <code>_logo-image-hover.scss</code> in den Ordner <code>/templates/[TEMPLATE]/custom/scss</code> und <code>logo-image-hover.js</code> in den Ordner <code>/templates/[TEMPLATE]/custom/js</code> kopiert werden.</p></div>]]>
+        <h3>Logo | Imager | Hover - Particle for Gantry Framework</h3>
+        <span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
+        <p><b>INFO</b>:&nbsp;Dieses Particle wurde für Gantry Hydrogen installiert.<br />Wenn Sie das Particle für ein anderes Gantry Template installieren möchten, so müssen Sie die zwei folgenden Dateien <code>logo-image-hover.yaml</code> und <code>logo-image-hover.html.twig</code> in den Ordner <code>/templates/[TEMPLATE]/custom/particles</code> kopieren.<br>Außerdem muss die Datei <code>_logo-image-hover.scss</code> in den Ordner <code>/templates/[TEMPLATE]/custom/scss</code> und <code>logo-image-hover.js</code> in den Ordner <code>/templates/[TEMPLATE]/custom/js</code> kopiert werden.</p></div>]]>
     </description>
     <fileset>
         <files folder="particles" target="templates/g5_hydrogen/custom/particles">
-			<filename>logo-image-hover.html.twig</filename>
-			<filename>logo-image-hover.yaml</filename>
-		</files>
+            <filename>logo-image-hover.html.twig</filename>
+            <filename>logo-image-hover.yaml</filename>
+        </files>
         <files folder="scss" target="templates/g5_hydrogen/custom/scss">
-			<filename>_logo-image-hover.scss</filename>
-		</files>
+            <filename>_logo-image-hover.scss</filename>
+        </files>
         <files folder="js" target="templates/g5_hydrogen/custom/js">
-			<filename>logo-image-hover.js</filename>
-		</files>
+            <filename>logo-image-hover.js</filename>
+        </files>
     </fileset>
 </extension>
