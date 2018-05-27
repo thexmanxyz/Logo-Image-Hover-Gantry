@@ -123,11 +123,11 @@
             {%- else -%}
                 {% set link_attrs %}{% endset %}
             {%- endif -%}
-            <img {{link_src_top}}{{link_attrs}} class="{% if effectS != 'none' %}{{effectS}} {% endif %}front"/>
+            <img {{link_src_top|raw}}{{link_attrs|raw}} class="{% if effectS != 'none' %}{{effectS}} {% endif %}front"/>
         {%- else -%}
             {%- set link_src_bottom -%}src="{{imgHover}}"{{imgHoverTitle|raw}}{{imgHoverAlt|raw}}{%- endset -%}
-            <img {{link_src_top}} class="{{effectM}} front"/>
-            <img {{link_src_bottom}} class="{{effectM}} back"/>
+            <img {{link_src_top|raw}} class="{{effectM}} front"/>
+            <img {{link_src_bottom|raw}} class="{{effectM}} back"/>
         {%- endif -%}
     {%- endif -%}
 {%- endmacro -%}
