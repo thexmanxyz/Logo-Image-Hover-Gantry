@@ -13,14 +13,25 @@
 ******************************************************/
 
 jQuery(document).ready(function($) {
-    $(".g-logo-image-hover img").mouseover(function(){
-        var hoverImg = $(this).attr("data-logo-over");
-        if(typeof hoverImg !== 'undefined' && hoverImg.length > 0)
-           this.src = hoverImg;
-    });
-    $(".g-logo-image-hover img").mouseout(function(){
-        var defaultImg = $(this).attr("data-logo-out");
-        if(typeof defaultImg !== 'undefined' && defaultImg.length > 0)
-           this.src = defaultImg;
-    });
+    var lih = new LogoImageHover();
+    lih.addMouseOverEvent($);
+    lih.addMouseOutEvent($);
 });
+
+function LogoImageHover(){
+    this.addMouseOverEvent = function($){
+        $(".g-logo-image-hover img").mouseover(function(){
+            var hoverImg = $(this).attr("data-logo-over");
+            if(typeof hoverImg !== 'undefined' && hoverImg.length > 0)
+               this.src = hoverImg;
+        });  
+    };
+    
+    this.addMouseOutEvent = function($) {
+        $(".g-logo-image-hover img").mouseout(function(){
+            var defaultImg = $(this).attr("data-logo-out");
+            if(typeof defaultImg !== 'undefined' && defaultImg.length > 0)
+               this.src = defaultImg;
+        });
+    }   
+}
