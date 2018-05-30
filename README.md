@@ -103,7 +103,7 @@ Example for a basic image effect:
 
 **Frontend (1)** - *[Fade](/screenshots/frontend_fade.gif)*
 
-![3](/screenshots/frontend_fade.gif)
+![6](/screenshots/frontend_fade.gif)
 
 ## Future Tasks
 * more languages
