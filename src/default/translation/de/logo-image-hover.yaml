@@ -424,12 +424,23 @@ form:
                   placeholder: -10 ... 10
                   default: 0
 
+                js.option:
+                  type: select.select
+                  label: JS Datei Standort
+                  description: Wählen Sie eine Option für die benutzerdefinierte JS Datei, statt dem standardmäßigen CDN. Lokal = 'templates/G_TEMPLATE/custom/js', Global = 'media/gantry5/engines/nucleus/js', Benutzerdefiniert = jeder relative oder absolute Pfad
+                  default: disabled
+                  options:
+                      disabled: Deaktiviert (CDN)
+                      local: Lokal (Template)
+                      global: Global (Gantry)
+                      custom: Benutzerdefiniert
+
                 js.path:
                   type: input.text
                   label: JS Pfad
                   description: Pfad zur Particle JS Datei auf diesem Server (relativ zu template/custom) oder auf einem anderen Server (absolut).
                   placeholder: Pfad/zum/JS
-                  default: js/logo-image-hover.js
+                  default: logo-image-hover.js
 
                 js.execution:
                   type: select.select

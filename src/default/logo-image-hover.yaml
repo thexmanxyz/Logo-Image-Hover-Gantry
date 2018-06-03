@@ -424,12 +424,23 @@ form:
                   placeholder: -10 ... 10
                   default: 0
 
+                js.option:
+                  type: select.select
+                  label: JS File Location
+                  description: Select an option for the custom JS file, instead of the default CDN location. Local = 'templates/G_TEMPLATE/custom/js', Global = 'media/gantry5/engines/nucleus/js', Custom = any relative or absolute path
+                  default: disabled
+                  options:
+                      disabled: Disabled (CDN)
+                      local: Local (Template)
+                      global: Global (Gantry)
+                      custom: Custom
+
                 js.path:
                   type: input.text
                   label: JS Path
                   description: Path to the Particle JS file either on this server (relative from template/custom) or on a different server (absolute).
                   placeholder: path/to/JS
-                  default: js/logo-image-hover.js
+                  default: logo-image-hover.js
 
                 js.execution:
                   type: select.select

@@ -12,7 +12,8 @@
         <![CDATA[<div class="alert alert-info" role="alert"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
         <h3>Logo | Imager | Hover - Particle for Gantry Framework</h3>
         <span aria-hidden="true" class="icon-user"></span>&nbsp;<em>Andreas Kar (andreas.kar@gmx.at)</em>
-        <p><b>NOTE</b>:&nbsp;This particle is installed for the Gantry Hydrogen.<br />If you want to install the particle on a different Gantry template, you must manually copy the two files <code>logo-image-hover.yaml</code> and <code>logo-image-hover.html.twig</code> to <code>/templates/[TEMPLATE]/custom/particles</code>.<br>Moreover, you have to copy <code>_logo-image-hover.scss</code> to <code>/templates/[TEMPLATE]/custom/scss</code> and <code>logo-image-hover.js</code> to <code>/templates/[TEMPLATE]/custom/js</code>.</p></div>]]>
+        <p><b>NOTE</b>:&nbsp;This Particle was installed for Gantry Hydrogen.<br />If you want to install the Particle for a different Gantry template, you must place the files as follows:</p>
+		<ul><li><code>*.yaml</code> =&gt; <code>/templates/[TEMPLATE]/custom/particles</code></li><li><code>*.twig</code> =&gt; <code>/templates/[TEMPLATE]/custom/particles</code></li><li><code>*.js</code> =&gt; <code>/templates/[TEMPLATE]/custom/js</code></li><li><code>*.scss</code> =&gt; <code>/templates/[TEMPLATE]/custom/scss</code></li></ul></div>]]>
     </description>
     <fileset>
         <files folder="particles" target="templates/g5_hydrogen/custom/particles">

@@ -61,25 +61,28 @@
 {% set scriptType = 'text/javascript' %}
 {% set jsPlace = particle.js.placement|default('head') %}
 {% set jsPrior = particle.js.priority|default(0) %}
-{% set jsPath = 'gantry-theme://' ~ particle.js.path|default('js/logo-image-hover.js') %}
 {% set jsHandle = particle.js.handle|default('inline') %}
-{% set jsExec = '' %}
+{% set jsExecAttr = '' %}
+{% set jsExec = particle.js.execution|default("both") %}
 
-{% if particle.js.execution == 'defer' or particle.js.execution == 'both' %}
-    {% set jsExec = 'defer="defer"' %}
+{% if jsExec == 'defer' or jsExec == 'both' %}
+    {% set jsExecAttr = 'defer="defer"' %}
 {% endif %}
 
-{% if particle.js.execution == 'both' %}
-    {% set jsExec = jsExec ~ ' ' %}
+{% if jsExec == 'both' %}
+    {% set jsExecAttr = jsExecAttr ~ ' ' %}
 {% endif %}
 
-{% if particle.js.execution == 'async' or particle.js.execution == 'both' %}
-    {% set jsExec = jsExec ~ 'async="async"' %}
+{% if jsExec == 'async' or jsExec == 'both' %}
+    {% set jsExecAttr = jsExecAttr ~ 'async="async"' %}
 {% endif %}
 
-{% if jsExec is not empty %}
-    {% set jsExec = ' ' ~ jsExec %}
+{% if jsExecAttr is not empty %}
+    {% set jsExecAttr = ' ' ~ jsExecAttr %}
 {% endif %}
+
+{% set cdnRepo = 'https://cdn.rawgit.com/thexmanxyz/Logo-Image-Hover-Gantry/ccf129b2/src/js' %}
+{% set jsPath = _self.getResourceFilePath(particle.js, cdnRepo, 'logo-image-hover', 'js') %}
 
 {%- set textTag -%}
     {%- if (particle.render == 'default' and not imageDefault) or particle.render == 'text' or particle.render == 'both' -%}
@@ -98,7 +101,7 @@
     {%- if particle.link.enabled == 1 -%}</a>{%- endif -%}
     {%- if jsHandle == 'extern' and effectMulti == 't1' and imageHover -%}
         {%- scripts in jsPlace with { priority: jsPrior } -%}
-            <script type="{{scriptType}}" src="{{url(jsPath)}}"{{jsExec}}></script>
+            <script type="{{scriptType}}" src="{{url(jsPath)}}"{{jsExecAttr}}></script>
         {%- endscripts -%}
     {%- endif -%}
 </div>
@@ -130,4 +133,27 @@
             <img {{link_src_bottom|raw}} class="{{effectM}} back"/>
         {%- endif -%}
     {%- endif -%}
+{%- endmacro -%}
+{%- macro getResourceFilePath(element, cdnUrl, cdnFile, type) -%}
+    {%- set elPath = element.path|default(cdnFile ~ "." ~ type) -%}
+    {%- set elOpt = element.option|default("disabled") -%}
+    {%- set path = empty -%}
+    {%- if elOpt == 'local' or elOpt == 'global' -%}
+        {%- set hPath = elPath -%}
+        {%- if hPath is not empty and hPath|slice(0, 1)|lower == '/' -%}
+            {%- set hPath = hPath|slice(1, (hPath|length - 1)) -%}
+        {%- endif -%}
+        {%- set hPath = type ~ '/' ~ hPath -%}
+        {%- if elOpt == 'local' -%}
+            {%- set path = 'gantry-theme://' ~ hPath -%}
+        {%- else -%}
+            {%- set path = 'media/gantry5/engines/nucleus/' ~ hPath -%}
+        {%- endif -%}
+    {%- elseif elOpt == 'custom' -%}
+        {%- set path = elPath -%}
+    {%- endif -%}
+    {%- if path is empty -%}
+        {%- set path = cdnUrl ~ '/' ~ cdnFile ~ "." ~ type -%}
+    {%- endif -%}
+    {{- path|raw -}}
 {%- endmacro -%}
