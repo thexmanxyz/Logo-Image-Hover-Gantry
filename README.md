@@ -17,7 +17,7 @@ ___
 **Legacy Particle - Gantry <5.3.2:**
 [English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.0/lih.particle.only.legacy.EN.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.0/lih.particle.only.legacy.DE.v1.1.0.zip)
 
-**Joomla Plugin - Gantry Global:**
+**Joomla Plugin - All Templates (Global):**
 [English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.0/lih.j3.global.EN.v1.1.0.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.0/lih.j3.global.DE.v1.1.0.zip)
 
 **Joomla Plugin - Hydrogen:**
