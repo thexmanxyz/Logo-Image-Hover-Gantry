@@ -28,7 +28,7 @@ ___
 ___
 
 ## Automatic Installation (Joomla only)
-1. Download the Plugin of the *Logo | Image | Hover Particle* for **Hydrogen or Helium**.
+1. Download the Plugin of the *Logo | Image | Hover Particle* for **Hydrogen, Helium or Global** installation.
 2. Install it over the Joomla Plugin System.
 3. Modify the `custom.scss` file located under `/[GANTRY_THEME]/custom/scss` and add the following line `@import "logo-image-hover";` at the end. Please check the list below to determine where the template folder for your CMS is located.
 
