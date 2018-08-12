@@ -121,7 +121,7 @@ None
 [Gantry Framework](http://gantry.org/)
 
 ## Credits
-Thanks to the Gantry team for providing a modern templating framework.
+Thanks to the [Gantry](https://github.com/gantry) team for providing a modern templating framework.
 
 Thanks to Naoya of [NxWorld](https://www.nxworld.net/tips/css-image-hover-effects.html) and [Rich Bradshaw](http://css3.bradshawenterprises.com/cfimg/) for the inspiration in terms of the the used CSS3 effects.
 
