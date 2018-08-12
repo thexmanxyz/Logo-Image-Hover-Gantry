@@ -9,7 +9,7 @@ This project contains a Gantry Particle and adds a very powerful image render an
 * Gantry Templating Framework and Theme
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for the Gantry themes - Helium and Hydrogen. The latest Particle version is **v1.1.1**.
+Choose the correct download for your target platform. Joomla Plugin System supported for all Gantry themes globally and locally for Helium or Hydrogen. The latest Particle version is **v1.1.1**.
 ___
 **Default Particle:**
 [English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.1/lih.particle.only.EN.v1.1.1.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.1/lih.particle.only.DE.v1.1.1.zip)
