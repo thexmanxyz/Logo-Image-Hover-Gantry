@@ -59,27 +59,12 @@
 {% endif %}
 
 {% set scriptType = 'text/javascript' %}
+
 {% set jsPlace = particle.js.placement|default('head') %}
+{% set jsExec = particle.js.execution|default("both") %}
+{% set jsExecAttr = _self.getJSExecution(jsExec) %}
 {% set jsPrior = particle.js.priority|default(0) %}
 {% set jsHandle = particle.js.handle|default('inline') %}
-{% set jsExecAttr = '' %}
-{% set jsExec = particle.js.execution|default("both") %}
-
-{% if jsExec == 'defer' or jsExec == 'both' %}
-    {% set jsExecAttr = 'defer="defer"' %}
-{% endif %}
-
-{% if jsExec == 'both' %}
-    {% set jsExecAttr = jsExecAttr ~ ' ' %}
-{% endif %}
-
-{% if jsExec == 'async' or jsExec == 'both' %}
-    {% set jsExecAttr = jsExecAttr ~ 'async="async"' %}
-{% endif %}
-
-{% if jsExecAttr is not empty %}
-    {% set jsExecAttr = ' ' ~ jsExecAttr %}
-{% endif %}
 
 {% set cdnRepo = 'https://cdn.rawgit.com/thexmanxyz/Logo-Image-Hover-Gantry/ccf129b2/src/js' %}
 {% set jsPath = _self.getResourceFilePath(particle.js, cdnRepo, 'logo-image-hover', 'js') %}
@@ -156,4 +141,21 @@
         {%- set path = cdnUrl ~ '/' ~ cdnFile ~ "." ~ type -%}
     {%- endif -%}
     {{- path|raw -}}
+{%- endmacro -%}
+
+{%- macro getJSExecution(type) -%}
+    {%- set attribute = '' -%}
+    {%- if type == 'defer' or type == 'both' -%}
+        {%- set attribute = 'defer="defer"' -%}
+    {%- endif -%}
+    {%- if type == 'both' -%}
+        {%- set attribute = attribute ~ ' ' -%}
+    {%- endif -%}
+    {%- if type == 'async' or type == 'both' -%}
+        {%- set attribute = attribute ~ 'async="async"' -%}
+    {%- endif -%}
+    {%- if type is not empty -%}
+        {%- set attribute = ' ' ~ attribute -%}
+    {%- endif -%}
+    {{- attribute|raw -}}
 {%- endmacro -%}
