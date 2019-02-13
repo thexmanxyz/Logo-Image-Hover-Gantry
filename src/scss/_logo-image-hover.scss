@@ -9,6 +9,8 @@
 *            CSS3 hover and transition effects.       *
 *                                                     *
 *   Author: Andreas Kar (thex) <andreas.kar@gmx.at>   *
+*   Repository: https://git.io/fA9XW                  *
+*   Homepage: https://gantryprojects.com              *
 *                                                     *
 ******************************************************/
 
