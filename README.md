@@ -126,5 +126,5 @@ Thanks to the [Gantry](https://github.com/gantry) team for providing a modern te
 
 Thanks to Naoya of [NxWorld](https://www.nxworld.net/tips/css-image-hover-effects.html) and [Rich Bradshaw](http://css3.bradshawenterprises.com/cfimg/) for the inspiration in terms of the the used CSS3 effects.
 
-## by [thex](https://github.com/thexmanxyz)
+## by [thex](https://github.com/thexmanxyz) | [gantryprojects](https://gantryprojects.com)
 Copyright (c) 2018, free to use in personal and commercial software as per the [license](/LICENSE.md).
