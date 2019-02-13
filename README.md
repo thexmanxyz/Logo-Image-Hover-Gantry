@@ -9,7 +9,7 @@ This project contains a Gantry Particle and adds a very powerful image render an
 * Gantry Templating Framework and Theme
 
 ## Download
-Choose the correct download for your target platform. Joomla Plugin System supported for all Gantry themes globally and locally for Helium or Hydrogen. The latest Particle version is **v1.1.2**.
+Choose the correct download for your target platform. The Joomla Plugin System is supported for all Gantry themes globally or locally for the templates Helium and Hydrogen. The latest Particle version is **v1.1.2**.
 ___
 **Default Particle:**
 [English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.2/lih.particle.only.EN.v1.1.2.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.2/lih.particle.only.DE.v1.1.2.zip)
@@ -37,9 +37,9 @@ ___
 ## Manual Installation
 1. Download the **Default or Legacy Package** of the *Logo | Image | Hover Particle*. If you are using Gantry **<5.3.2** please use the **Legacy Package** for compatibility reasons.
 2. Extract the files.
-3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/[GANTRY_THEME]/custom/particles`. Please check the list below to determine where the template folder for your CMS is located.
-4. Copy the `.js` file to the folder `/[GANTRY_THEME]/custom/js`. Create it if it does not exist.
-5. Copy the `.scss` file to the folder `/[GANTRY_THEME]/custom/scss`.
+3. Copy the `.html.twig` and the `.yaml` file to your particle folder `/[GANTRY_THEME]/custom/particles`. Please check the [listing](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry#cms-template-folder) below to determine where the template folder for your CMS is located.
+4. Copy the `.js` file to the folder `/[GANTRY_THEME]/custom/js`. Create the folder if it does not exist.
+5. Copy the `.scss` file to the folder `/[GANTRY_THEME]/custom/scss`. Create the folder if it does not exist.
 6. Modify the `custom.scss` file located under `/[GANTRY_THEME]/custom/scss` and add the following line `@import "logo-image-hover";` at the end.
 
 ## CMS Template Folder
@@ -58,6 +58,7 @@ Please be aware that the template folder path varies in dependence of the used C
 1. Go to your Gantry templating backend (e.g. Extensions/Templates).
 2. Switch to **Layout** and add the new appearing Particle called **Logo | Image | Hover** either globally to your site (**base outline**), to a specific template or page by dragging it to the designated section.
 3. Configure the appearance according to your favor.
+4. [Optional] The download package contains the JS file of the project. You can embed it over the backend configuration if you do not want to use the default CDN. If you chose automatic installation the file is already there.
  
 ## Supported Parameters and Particle Options
 * Container Attributes
@@ -111,8 +112,8 @@ Example for a basic image effect:
 ![6](/screenshots/frontend_fade.gif)
 
 ## Future Tasks
-* more languages
-* more CSS3 effects
+- [ ] add more CSS3 effects
+- [ ] add more languages
 
 ## Known Issues
 None
