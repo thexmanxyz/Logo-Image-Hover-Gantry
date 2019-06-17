@@ -182,6 +182,12 @@ form:
                   description: The 'alt' attribute text for the second image.
                   placeholder: Alt Attribute Text
 
+                image.lazy_load:
+                  type: input.checkbox
+                  label: Lazy Load
+                  description: Enable or disable to manually force lazy loading attributes (requires library).
+                  default: 0
+
         tab_effect:
             label: Effect
             fields:
