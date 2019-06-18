@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="file" method="upgrade" version="3.0">
     <name>Logo | Imager | Hover - Gantry Particle (Hydrogen)</name>
-    <version>1.1.4</version>
+    <version>1.1.5</version>
     <creationDate>17.06.2019</creationDate>
     <author>Andreas Kar</author>
     <authorEmail>andreas.kar@gmx.at</authorEmail>
@@ -27,6 +27,7 @@
         </files>
         <files folder="js" target="templates/g5_hydrogen/custom/js">
             <filename>logo-image-hover.js</filename>
+            <filename>logo-image-hover.min.js</filename>
         </files>
     </fileset>
 </extension>
