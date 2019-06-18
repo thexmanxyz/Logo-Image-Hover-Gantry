@@ -28,12 +28,12 @@ function LogoImageHover(){
                this.src = hoverImg;
         });  
     };
-    
+
     this.addMouseOutEvent = function($) {
         $(".g-logo-image-hover img").mouseout(function(){
             var defaultImg = $(this).attr("data-logo-out");
             if(typeof defaultImg !== 'undefined' && defaultImg.length > 0)
                this.src = defaultImg;
         });
-    }   
+    };
 }

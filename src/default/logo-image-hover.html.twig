@@ -93,6 +93,17 @@
             <script type="{{scriptType}}" src="{{url(jsPath)}}"{{jsExecAttr}}></script>
         {%- endscripts -%}
     {%- endif -%}
+    {%- if imageDefLazyLoad or imageHovLazyLoad -%}
+        {%- scripts in 'head' with { priority: '0' } -%}
+            <script>
+                jQuery(".g-offcanvas-toggle").on("touchstart click", function($) {
+                    if(typeof jQuery.lazyLoadXT !== 'undefined'){
+                        jQuery(".g-logo-image-hover img:not(.lazy-loaded)").lazyLoadXT({show: true});
+                    }
+                });
+            </script>
+        {%- endscripts -%}
+    {%- endif -%}
 </div>
 {%- endblock -%}
 
