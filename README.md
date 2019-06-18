@@ -75,6 +75,7 @@ Please be aware that the template folder path varies in dependence of the used C
 * many different CSS3 effects included (**over 150 variations**)
   * e.g. Zoom-In, Zoom-Out, Slide, Rotate, Blur, Unblur, Sepia, Gray, Pulse, ...
   * predefined Effect Slots for custom adaptions available 
+* Lazy Load of images supported (requires 3rd party library)
 * JS Priority and Placement (head or footer)
 * JS Loading
   * Remote, Local and Default
