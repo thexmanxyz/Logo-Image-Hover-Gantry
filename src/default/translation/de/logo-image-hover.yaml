@@ -160,6 +160,12 @@ form:
                   description: Der 'alt' Attribut Text für das Standardbild.
                   placeholder: Alt Attribut Text
 
+                image.default.lazy_load:
+                  type: input.checkbox
+                  label: Lazy Load
+                  description: Aktivieren oder deaktivieren um Lazy Loading Attribute manuell zu setzen (benötigt Bibliothek).
+                  default: 0
+
                 _info_second_image:
                   type: separator.note
                   class: alert alert-info
@@ -181,6 +187,12 @@ form:
                   label: Alt Text
                   description: Der 'alt' Attribut Text für das zweite Bild.
                   placeholder: Alt Attribut Text
+
+                image.hover.lazy_load:
+                  type: input.checkbox
+                  label: Lazy Load
+                  description: Aktivieren oder deaktivieren um Lazy Loading Attribute manuell zu setzen (benötigt Bibliothek).
+                  default: 0
 
         tab_effect:
             label: Effekt
