@@ -119,7 +119,7 @@
         {%- else -%}
             {%- set link_src_bottom -%}{% if imgHoverLL %}data-{% endif %}src="{{imgHover}}"{{imgHoverTitle|raw}}{{imgHoverAlt|raw}}{%- endset -%}
             <img {{link_src_top|raw}} class="{{effectM}} front{% if imgLL %} lazy{% endif %}"/>
-            <img {{link_src_bottom|raw}} class="{{imgHoverLL}}{{particle.image.lazy_Load}} {{effectM}} back {% if imageLazyLoad %} lazy{% endif %}"/>
+            <img {{link_src_bottom|raw}} class="{{effectM}} back {% if imgHoverLL %} lazy{% endif %}"/>
         {%- endif -%}
     {%- endif -%}
 {%- endmacro -%}
