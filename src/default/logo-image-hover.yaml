@@ -160,6 +160,12 @@ form:
                   description: The 'alt' attribute text for the default image.
                   placeholder: Alt Attribute Text
 
+                image.default.lazy_load:
+                  type: input.checkbox
+                  label: Lazy Load
+                  description: Enable or disable to manually force lazy loading attributes (requires library).
+                  default: 0
+
                 _info_second_image:
                   type: separator.note
                   class: alert alert-info
@@ -182,7 +188,7 @@ form:
                   description: The 'alt' attribute text for the second image.
                   placeholder: Alt Attribute Text
 
-                image.lazy_load:
+                image.hover.lazy_load:
                   type: input.checkbox
                   label: Lazy Load
                   description: Enable or disable to manually force lazy loading attributes (requires library).

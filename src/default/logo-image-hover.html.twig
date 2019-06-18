@@ -37,7 +37,8 @@
 {% set imageHoverTitle = (particle.image.hover.title ? ' title="' ~ particle.image.hover.title ~ '"' : '') %}
 {% set imageAlt = (particle.image.default.alt ? ' alt="' ~ particle.image.default.alt ~ '"' : '') %}
 {% set imageHoverAlt = (particle.image.hover.alt ? ' alt="' ~ particle.image.hover.alt ~ '"' : '') %}
-{% set imageLazyLoad = particle.image.lazy_load %}
+{% set imageDefLazyLoad = particle.image.default.lazy_load %}
+{% set imageHovLazyLoad = particle.image.hover.lazy_load %}
 
 {% set effectMulti = particle.effect.multi|default('t1') %}
 {% set effectSingle = particle.effect.single|default('none') %}
@@ -83,7 +84,7 @@
     {%- if particle.link.enabled == 1 -%}<a href="{{aUrl}}"{{aTarget|raw}}{{aTitle|raw}}{{aRel|raw}}>{%- endif -%}
     {% if particle.text.position == 'before' %}{{textTag|raw}}{% endif %}
     {%- if particle.render == 'default' or particle.render == 'image' or particle.render == 'both' -%}
-        {{- _self.renderImage(imageDefault, imageHover, imageTitle, imageHoverTitle, imageAlt, imageHoverAlt, effectSingle, effectMulti, jsHandle) -}}
+        {{- _self.renderImage(imageDefault, imageHover, imageTitle, imageHoverTitle, imageAlt, imageHoverAlt, imageDefLazyLoad, imageHovLazyLoad, effectSingle, effectMulti, jsHandle) -}}
     {%- endif -%}
     {% if particle.text.position == 'after' %}{{textTag|raw}}{% endif %}
     {%- if particle.link.enabled == 1 -%}</a>{%- endif -%}
@@ -101,8 +102,8 @@
     {%- endif -%}
 {%- endmacro -%}
 
-{%- macro renderImage(imgDef, imgHover, imgTitle, imgHoverTitle, imgAlt, imgHoverAlt, effectS, effectM, jsType) -%}
-    {%- set link_src_top -%}{% if imageLazyLoad %}class="owl-lazy" data-{% endif %}src="{{imgDef}}"{{imgTitle|raw}}{{imgAlt|raw}}{%- endset -%}
+{%- macro renderImage(imgDef, imgHover, imgTitle, imgHoverTitle, imgAlt, imgHoverAlt, imgLL, imgHoverLL,  effectS, effectM, jsType) -%}
+    {%- set link_src_top -%}{% if imgLL %}data-{% endif %}src="{{imgDef}}"{{imgTitle|raw}}{{imgAlt|raw}}{%- endset -%}
     {%- if imgDef -%}
         {%- if effectM == 't1' or not imgHover -%}
             {%- if imgHover -%}
@@ -116,9 +117,9 @@
             {%- endif -%}
             <img {{link_src_top|raw}}{{link_attrs|raw}} class="{% if effectS != 'none' %}{{effectS}} {% endif %}front"/>
         {%- else -%}
-            {%- set link_src_bottom -%}{% if imageLazyLoad %}class="owl-lazy" data-{% endif %}src="{{imgHover}}"{{imgHoverTitle|raw}}{{imgHoverAlt|raw}}{%- endset -%}
-            <img {{link_src_top|raw}} class="{{effectM}} front"/>
-            <img {{link_src_bottom|raw}} class="{{effectM}} back"/>
+            {%- set link_src_bottom -%}{% if imgHoverLL %}data-{% endif %}src="{{imgHover}}"{{imgHoverTitle|raw}}{{imgHoverAlt|raw}}{%- endset -%}
+            <img {{link_src_top|raw}} class="{{effectM}} front{% if imgLL %} lazy{% endif %}"/>
+            <img {{link_src_bottom|raw}} class="{{imgHoverLL}}{{particle.image.lazy_Load}} {{effectM}} back {% if imageLazyLoad %} lazy{% endif %}"/>
         {%- endif -%}
     {%- endif -%}
 {%- endmacro -%}
