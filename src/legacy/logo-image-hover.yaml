@@ -424,6 +424,13 @@ form:
               inline: Inline
               extern: Extern
 
+        cdn.base_url:
+          type: input.text
+          label: CDN Base URL
+          description: The base URL for the CDN server.
+          placeholder: https://cdn.jsdelivr.net/gh/thexmanxyz/Logo-Image-Hover-Gantry/src/js
+          default: https://cdn.jsdelivr.net/gh/thexmanxyz/Logo-Image-Hover-Gantry/src/js
+
         js.placement:
           type: select.select
           label: JS Placement

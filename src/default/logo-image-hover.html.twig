@@ -70,7 +70,7 @@
 {% set jsPrior = particle.js.priority|default(0) %}
 {% set jsHandle = particle.js.handle|default('inline') %}
 
-{% set cdnRepo = 'https://cdn.rawgit.com/thexmanxyz/Logo-Image-Hover-Gantry/ccf129b2/src/js' %}
+{% set cdnRepo = particle.cdn.base_url|default('https://cdn.jsdelivr.net/gh/thexmanxyz/Logo-Image-Hover-Gantry/src/js') %}
 {% set jsPath = _self.getResourceFilePath(particle.js, cdnRepo, 'logo-image-hover', 'js') %}
 
 {%- set textTag -%}

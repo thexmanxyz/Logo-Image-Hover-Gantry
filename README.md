@@ -9,22 +9,22 @@ This project contains a Gantry Particle and adds a very powerful image render an
 * Gantry Templating Framework and Theme
 
 ## Download
-Choose the correct download for your target platform. The Joomla Plugin System is supported for all Gantry themes globally or locally for the templates Helium and Hydrogen. The latest Particle version is **v1.1.5**.
+Choose the correct download for your target platform. The Joomla Plugin System is supported for all Gantry themes globally or locally for the templates Helium and Hydrogen. The latest Particle version is **v1.1.6**.
 ___
 **Default Particle:**
-[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.particle.only.EN.v1.1.5.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.particle.only.DE.v1.1.5.zip)
+[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.particle.only.EN.v1.1.6.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.particle.only.DE.v1.1.6.zip)
 
 **Legacy Particle - Gantry <5.3.2:**
-[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.particle.only.legacy.EN.v1.1.5.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.particle.only.legacy.DE.v1.1.5.zip)
+[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.particle.only.legacy.EN.v1.1.6.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.particle.only.legacy.DE.v1.1.6.zip)
 
 **Joomla Plugin - All Templates (Global):**
-[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.j3.global.EN.v1.1.5.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.j3.global.DE.v1.1.5.zip)
+[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.j3.global.EN.v1.1.6.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.j3.global.DE.v1.1.6.zip)
 
 **Joomla Plugin - Hydrogen:**
-[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.j3.hydrogen.EN.v1.1.5.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.j3.hydrogen.DE.v1.1.5.zip)
+[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.j3.hydrogen.EN.v1.1.6.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.j3.hydrogen.DE.v1.1.6.zip)
 
 **Joomla Plugin - Helium:**
-[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.j3.helium.EN.v1.1.5.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.5/lih.j3.helium.DE.v1.1.5.zip)
+[English](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.j3.helium.EN.v1.1.6.zip) / [German](https://github.com/thexmanxyz/Logo-Image-Hover-Gantry/releases/download/v1.1.6/lih.j3.helium.DE.v1.1.6.zip)
 ___
 
 ## Automatic Installation (Joomla only)
@@ -61,25 +61,25 @@ Please be aware that the template folder path varies in dependence of the used C
 4. [Optional] The download package contains the JS file of the project. You can embed it over the backend configuration if you do not want to use the default CDN. If you chose automatic installation the file is already there.
  
 ## Supported Parameters and Particle Options
-* Container Attributes
-* Custom CSS Classes
-  * for Container and Image Text
-* Output Rendering 
-  * Prioritized, Image only, Text only or Both
-* URL Configuration for the Image and Text
-  * Enable, Target and Title
-* Text Position and Custom Styling
-* Image Configuration
-  * two Images with Overlay supported for Fancy Transition, Timer and Rollover Effects
-  * `alt` and `title` Attribute configurable for both Images
+* Container attributes
+* Custom CSS classes
+  * For container and image text
+* Output rendering 
+  * Prioritized, image only, text only or both
+* URL configuration for the image and text
+  * Enable, target and title
+* Text position and custom styling
+* Image configuration
+  * Two Images with overlay supported for fancy transition, timer and rollover effects
+  * `alt` and `title` attribute configurable for both Images
 * many different CSS3 effects included (**over 150 variations**)
-  * e.g. Zoom-In, Zoom-Out, Slide, Rotate, Blur, Unblur, Sepia, Gray, Pulse, ...
-  * predefined Effect Slots for custom adaptions available 
-* Lazy Load of images supported (requires 3rd party library)
-* JS Priority and Placement (head or footer)
-* JS Loading
+  * E.g. Zoom-In, Zoom-Out, Slide, Rotate, Blur, Unblur, Sepia, Gray, Pulse, ...
+  * Predefined effect slots for custom adaptions available 
+* Lazy load of images supported (requires 3rd party library)
+* JS priority and placement (head or footer)
+* JS loading
   * Remote, Local and Default
-* JS Execution
+* JS execution
   * Asynchronous
   * Deferred
 
