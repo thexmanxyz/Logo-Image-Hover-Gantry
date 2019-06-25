@@ -81,29 +81,22 @@
 
 {%- block particle -%}
 <div class="g-logo-image-hover{{ofClass|e}}{{cClass|e}}"{{cAttrs|raw}}>
+    {%- set lazyState = (imageDefLazyLoad or imageHovLazyLoad) ? 'true' : 'false' -%}
+    {%- set effectState = (jsHandle == 'extern' and effectMulti == 't1' and imageHover) ? 'true' : 'false' -%}
+    
     {%- if particle.link.enabled == 1 -%}<a href="{{aUrl}}"{{aTarget|raw}}{{aTitle|raw}}{{aRel|raw}}>{%- endif -%}
-    {% if particle.text.position == 'before' %}{{textTag|raw}}{% endif %}
+    {%- if particle.text.position == 'before' -%}{{textTag|raw}}{%- endif -%}
     {%- if particle.render == 'default' or particle.render == 'image' or particle.render == 'both' -%}
         {{- _self.renderImage(imageDefault, imageHover, imageTitle, imageHoverTitle, imageAlt, imageHoverAlt, imageDefLazyLoad, imageHovLazyLoad, effectSingle, effectMulti, jsHandle) -}}
     {%- endif -%}
     {% if particle.text.position == 'after' %}{{textTag|raw}}{% endif %}
     {%- if particle.link.enabled == 1 -%}</a>{%- endif -%}
-    {%- if jsHandle == 'extern' and effectMulti == 't1' and imageHover -%}
-        {%- scripts in jsPlace with { priority: jsPrior } -%}
-            <script type="{{scriptType}}" src="{{url(jsPath)}}"{{jsExecAttr}}></script>
-        {%- endscripts -%}
-    {%- endif -%}
-    {%- if imageDefLazyLoad or imageHovLazyLoad -%}
-        {%- scripts in 'head' with { priority: '0' } -%}
-            <script>
-                jQuery(".g-offcanvas-toggle").on("touchstart click", function($) {
-                    if(typeof jQuery.lazyLoadXT !== 'undefined'){
-                        jQuery(".g-logo-image-hover img:not(.lazy-loaded)").lazyLoadXT({show: true});
-                    }
-                });
-            </script>
-        {%- endscripts -%}
-    {%- endif -%}
+    {%- scripts in jsPlace with { priority: jsPrior } -%}
+        <script>window.logoimagehover = {lazy: {{lazyState}}, effect: {{effectState}} };</script>
+    {%- endscripts -%}
+    {%- scripts in jsPlace with { priority: jsPrior } -%}
+        <script type="{{scriptType}}" src="{{url(jsPath)}}"{{jsExecAttr}}></script>
+    {%- endscripts -%}
 </div>
 {%- endblock -%}
 

@@ -16,8 +16,15 @@
 
 jQuery(document).ready(function($) {
     var lih = new LogoImageHover();
-    lih.addMouseOverEvent($);
-    lih.addMouseOutEvent($);
+    
+    if(logoimagehover.effect){
+        lih.addMouseOverEvent($);
+        lih.addMouseOutEvent($);
+    }
+
+    if(logoimagehover.lazy){
+        lih.forceLoad($);
+    }
 });
 
 function LogoImageHover(){
@@ -34,6 +41,14 @@ function LogoImageHover(){
             var defaultImg = $(this).attr("data-logo-out");
             if(typeof defaultImg !== 'undefined' && defaultImg.length > 0)
                this.src = defaultImg;
+        });
+    };
+    
+    this.forceLoad =  function($) {
+        $(".g-offcanvas-toggle").on("touchstart click", function() {
+            if(typeof jQuery.lazyLoadXT !== 'undefined'){
+                $(".g-logo-image-hover img:not(.lazy-loaded)").lazyLoadXT({show: true});
+            }
         });
     };
 }
