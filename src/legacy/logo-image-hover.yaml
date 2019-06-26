@@ -28,7 +28,7 @@ form:
     enabled:
       type: input.checkbox
       label: Enabled
-      description: Globally enable the Logo | Image Hover particle.
+      description: Globally enable the Logo | Image Hover Particle.
       default: true
 
     set_general:
