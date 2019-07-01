@@ -64,7 +64,7 @@ form:
                       both: Beide
 
                 link.enabled:
-                  type: input.checkbox
+                  type: enable.enable
                   label: aktiviere URL
                   description: Aktiviert oder deaktiviert den Bildlink.
                   default: 1
@@ -161,7 +161,7 @@ form:
                   placeholder: Alt Attribut Text
 
                 image.default.lazy_load:
-                  type: input.checkbox
+                  type: enable.enable
                   label: Lazy Load
                   description: Aktivieren oder deaktivieren um Lazy Loading Attribute manuell zu setzen (benötigt Bibliothek).
                   default: 0
@@ -189,7 +189,7 @@ form:
                   placeholder: Alt Attribut Text
 
                 image.hover.lazy_load:
-                  type: input.checkbox
+                  type: enable.enable
                   label: Lazy Load
                   description: Aktivieren oder deaktivieren um Lazy Loading Attribute manuell zu setzen (benötigt Bibliothek).
                   default: 0
@@ -198,7 +198,7 @@ form:
             label: Effekt
             fields:
                 effect.overflow:
-                  type: input.checkbox
+                  type: enable.enable
                   label: Overflow Hidden
                   description: Aktivieren oder deaktivieren Sie diese Option für die Anwendung der Overflow Hidden Klasse. Diese Funktion ist vor allem für Effekte nützlich, die über die Containergröße expandieren.
                   default: 0

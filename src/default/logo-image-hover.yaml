@@ -64,7 +64,7 @@ form:
                       both: Both
 
                 link.enabled:
-                  type: input.checkbox
+                  type: enable.enable
                   label: URL enabled
                   description: Enable or disable the image link.
                   default: 1
@@ -161,7 +161,7 @@ form:
                   placeholder: Alt Attribute Text
 
                 image.default.lazy_load:
-                  type: input.checkbox
+                  type: enable.enable
                   label: Lazy Load
                   description: Enable or disable to manually force lazy loading attributes (requires library).
                   default: 0
@@ -189,7 +189,7 @@ form:
                   placeholder: Alt Attribute Text
 
                 image.hover.lazy_load:
-                  type: input.checkbox
+                  type: enable.enable
                   label: Lazy Load
                   description: Enable or disable to manually force lazy loading attributes (requires library).
                   default: 0
@@ -198,7 +198,7 @@ form:
             label: Effect
             fields:
                 effect.overflow:
-                  type: input.checkbox
+                  type: enable.enable
                   label: Overflow Hidden
                   description: Enable or disable the overflow hidden class. Useful for effects that would expand beyond the container.
                   default: 0
