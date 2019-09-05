@@ -21,7 +21,7 @@ set scr_log_files=0
 
 REM --- project variables ---
 set prj_id=lih
-set prj_rev=v1.1.8
+set prj_rev=v1.1.9
 set prj_name=logo-image-hover
 set prj_fullname=Logo / Image / Hover - Particle
 set prj_title_hr=-----------------------------------
