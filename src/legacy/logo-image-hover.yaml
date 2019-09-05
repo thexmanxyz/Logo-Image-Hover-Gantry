@@ -428,8 +428,8 @@ form:
           type: input.text
           label: CDN Base URL
           description: The base URL for the CDN server.
-          placeholder: https://cdn.jsdelivr.net/gh/thexmanxyz/Logo-Image-Hover-Gantry/src/js
-          default: https://cdn.jsdelivr.net/gh/thexmanxyz/Logo-Image-Hover-Gantry/src/js
+          placeholder: https://cdn.jsdelivr.net/gh/thexmanxyz/Logo-Image-Hover-Gantry@latest/src/js
+          default: https://cdn.jsdelivr.net/gh/thexmanxyz/Logo-Image-Hover-Gantry@latest/src/js
 
         js.placement:
           type: select.select
