@@ -166,6 +166,13 @@ form:
                   description: Aktivieren oder deaktivieren um Lazy Loading Attribute manuell zu setzen (benötigt Bibliothek).
                   default: 0
 
+                image.default.lazy_load_class:
+                  type: input.text
+                  label: Lazy Load Klasse
+                  description: Der Name der Klasse ('class') der für eine Lazy Load Bibliothek angehängt wird.
+                  placeholder: Lazy Load Klassen Name
+                  default: jch-lazyload
+
                 _info_second_image:
                   type: separator.note
                   class: alert alert-info
@@ -193,6 +200,13 @@ form:
                   label: Lazy Load
                   description: Aktivieren oder deaktivieren um Lazy Loading Attribute manuell zu setzen (benötigt Bibliothek).
                   default: 0
+
+                image.hover.lazy_load_class:
+                  type: input.text
+                  label: Lazy Load Klasse
+                  description: Der Name der Klasse ('class') der für eine Lazy Load Bibliothek angehängt wird.
+                  placeholder: Lazy Load Klassen Name
+                  default: jch-lazyload
 
         tab_effect:
             label: Effekt
