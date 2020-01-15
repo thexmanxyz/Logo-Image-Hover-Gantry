@@ -166,6 +166,13 @@ form:
                   description: Enable or disable to manually force lazy loading attributes (requires library).
                   default: 0
 
+                image.default.lazy_load_class:
+                  type: input.text
+                  label: Lazy Load Class
+                  description: The 'class' name which will be appended for the lazy load library.
+                  placeholder: Lazy Load Class Name
+                  default: jch-lazyload
+
                 _info_second_image:
                   type: separator.note
                   class: alert alert-info
@@ -193,6 +200,13 @@ form:
                   label: Lazy Load
                   description: Enable or disable to manually force lazy loading attributes (requires library).
                   default: 0
+
+                image.hover.lazy_load_class:
+                  type: input.text
+                  label: Lazy Load Class
+                  description: The 'class' name which will be appended for the lazy load library.
+                  placeholder: Lazy Load Class Name
+                  default: jch-lazyload
 
         tab_effect:
             label: Effect

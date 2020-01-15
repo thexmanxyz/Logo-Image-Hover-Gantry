@@ -31,17 +31,11 @@
     {% set cClass = '' %}
 {% endif %}
 
-{% set imageDefault = url(particle.image.default.url) %}
-{% set imageHover = url(particle.image.hover.url) %}
-{% set imageTitle = (particle.image.default.title ? ' title="' ~ particle.image.default.title ~ '"' : '') %}
-{% set imageHoverTitle = (particle.image.hover.title ? ' title="' ~ particle.image.hover.title ~ '"' : '') %}
-{% set imageAlt = (particle.image.default.alt ? ' alt="' ~ particle.image.default.alt ~ '"' : '') %}
-{% set imageHoverAlt = (particle.image.hover.alt ? ' alt="' ~ particle.image.hover.alt ~ '"' : '') %}
-{% set imageDefLazyLoad = particle.image.default.lazy_load %}
-{% set imageHovLazyLoad = particle.image.hover.lazy_load %}
-
+{% set imgDefault = url(particle.image.default.url) %}
+{% set imgHover = url(particle.image.hover.url) %}
+{% set imgDefaultLL = particle.image.default.lazy_load|default(0) %}
+{% set imgHoverLL = particle.image.hover.lazy_load|default(0) %}
 {% set effectMulti = particle.effect.multi|default('t1') %}
-{% set effectSingle = particle.effect.single|default('none') %}
 {% set ofClass =  (particle.effect.overflow ? ' of-hidden' : '') %}
 
 {% set text = particle.text.text|default('Logo / Image') %}
@@ -74,20 +68,20 @@
 {% set jsPath = _self.getResourceFilePath(particle.js, cdnRepo, 'logo-image-hover', 'js') %}
 
 {%- set textTag -%}
-    {%- if (particle.render == 'default' and not imageDefault) or particle.render == 'text' or particle.render == 'both' -%}
+    {%- if (particle.render == 'default' and not imgDefault) or particle.render == 'text' or particle.render == 'both' -%}
             {{- _self.renderTag(tStyle, tClass, 0) -}}{{text|raw}}{{- _self.renderTag(tStyle, '', 1) -}}
     {%- endif -%}
 {%- endset -%}
 
 {%- block particle -%}
 <div class="g-logo-image-hover{{ofClass|e}}{{cClass|e}}"{{cAttrs|raw}}>
-    {%- set lazyState = (imageDefLazyLoad or imageHovLazyLoad) ? 'true' : 'false' -%}
-    {%- set effectState = (jsHandle == 'extern' and effectMulti == 't1' and imageHover) ? 'true' : 'false' -%}
+    {%- set lazyState = (imgDefaultLL or imgHoverLL) ? 'true' : 'false' -%}
+    {%- set effectState = (jsHandle == 'extern' and effectMulti == 't1' and imgHover) ? 'true' : 'false' -%}
     
     {%- if particle.link.enabled == 1 -%}<a href="{{aUrl}}"{{aTarget|raw}}{{aTitle|raw}}{{aRel|raw}}>{%- endif -%}
     {%- if particle.text.position == 'before' -%}{{textTag|raw}}{%- endif -%}
     {%- if particle.render == 'default' or particle.render == 'image' or particle.render == 'both' -%}
-        {{- _self.renderImage(imageDefault, imageHover, imageTitle, imageHoverTitle, imageAlt, imageHoverAlt, imageDefLazyLoad, imageHovLazyLoad, effectSingle, effectMulti, jsHandle) -}}
+        {{- _self.renderImage(particle, imgDefault, imgHover, imgDefaultLL, imgHoverLL, jsHandle) -}}
     {%- endif -%}
     {% if particle.text.position == 'after' %}{{textTag|raw}}{% endif %}
     {%- if particle.link.enabled == 1 -%}</a>{%- endif -%}
@@ -106,24 +100,33 @@
     {%- endif -%}
 {%- endmacro -%}
 
-{%- macro renderImage(imgDef, imgHover, imgTitle, imgHoverTitle, imgAlt, imgHoverAlt, imgLL, imgHoverLL,  effectS, effectM, jsType) -%}
-    {%- set link_src_top -%}{% if imgLL %}data-{% endif %}src="{{imgDef}}"{{imgTitle|raw}}{{imgAlt|raw}}{%- endset -%}
-    {%- if imgDef -%}
-        {%- if effectM == 't1' or not imgHover -%}
+{%- macro renderImage(particle, imgDefault, imgHover, imgDefaultLL, imgHoverLL, jsHandle) -%}
+    {% set imgDefaultTitle = (particle.image.default.title ? ' title="' ~ particle.image.default.title ~ '"' : '') %}
+    {% set imgHoverTitle = (particle.image.hover.title ? ' title="' ~ particle.image.hover.title ~ '"' : '') %}
+    {% set imgDefaultAlt = (particle.image.default.alt ? ' alt="' ~ particle.image.default.alt ~ '"' : '') %}
+    {% set imgHoverAlt = (particle.image.hover.alt ? ' alt="' ~ particle.image.hover.alt ~ '"' : '') %}
+    {% set imgDefaultLLC = particle.image.default.lazy_load_class|default('jch-lazyload') %}
+    {% set imgHoverLLC = particle.image.hover.lazy_load_class|default('jch-lazyload') %}
+    {% set effectMulti = particle.effect.multi|default('t1') %}
+    {% set effectSingle = particle.effect.single|default('none') %}
+
+    {%- set link_src_top -%}{% if imgDefaultLL %}data-{% endif %}src="{{imgDefault}}"{{imgDefaultTitle|raw}}{{imgDefaultAlt|raw}}{%- endset -%}
+    {%- if imgDefault -%}
+        {%- if effectMulti == 't1' or not imgHover -%}
             {%- if imgHover -%}
-                {%- if jsType == 'inline' -%}
-                    {% set link_attrs %} onmouseover="this.src='{{imgHover}}'" onmouseout="this.src='{{imgDef}}'"{% endset %}
+                {%- if jsHandle == 'inline' -%}
+                    {% set link_attrs %} onmouseover="this.src='{{imgHover}}'" onmouseout="this.src='{{imgDefault}}'"{% endset %}
                 {%- else -%}
-                    {% set link_attrs %} data-logo-over="{{imgHover}}" data-logo-out="{{imgDef}}"{% endset %}
+                    {% set link_attrs %} data-logo-over="{{imgHover}}" data-logo-out="{{imgDefault}}"{% endset %}
                 {%- endif -%}
             {%- else -%}
                 {% set link_attrs %}{% endset %}
             {%- endif -%}
-            <img {{link_src_top|raw}}{{link_attrs|raw}} class="{% if effectS != 'none' %}{{effectS}} {% endif %}front"/>
+            <img {{link_src_top|raw}}{{link_attrs|raw}} class="{% if effectSingle != 'none' %}{{effectSingle}} {% endif %}front"/>
         {%- else -%}
             {%- set link_src_bottom -%}{% if imgHoverLL %}data-{% endif %}src="{{imgHover}}"{{imgHoverTitle|raw}}{{imgHoverAlt|raw}}{%- endset -%}
-            <img {{link_src_top|raw}} class="{{effectM}} front{% if imgLL %} lazy{% endif %}"/>
-            <img {{link_src_bottom|raw}} class="{{effectM}} back {% if imgHoverLL %} lazy{% endif %}"/>
+            <img {{link_src_top|raw}} class="{{effectMulti}} front{% if imgDefaultLL %} {{imgDefaultLLC}}{% endif %}"/>
+            <img {{link_src_bottom|raw}} class="{{effectMulti}} back {% if imgHoverLL %} {{imgHoverLLC}}{% endif %}"/>
         {%- endif -%}
     {%- endif -%}
 {%- endmacro -%}
