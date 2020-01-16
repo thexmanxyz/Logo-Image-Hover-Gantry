@@ -814,6 +814,11 @@
 			}
         }
 
+		&.t6.front:hover + img.t6.back, &.t7.front:hover + img.t7.back,
+		&.t8.front:hover + img.t8.back,	&.t9.front:hover + img.t9.back{
+			opacity: 1;
+		}
+
         &.t10 {
             &.front {
                 -webkit-animation: fadeAnimation 9s infinite ease-in-out alternate;
