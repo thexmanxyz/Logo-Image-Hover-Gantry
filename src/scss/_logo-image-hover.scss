@@ -809,8 +809,9 @@
         }
 
         &.t6, &.t7, &.t8, &.t9 {
-            &.front:hover + &.back
-            opacity: 1;
+            &.front:hover + &.back {
+				opacity: 1;
+			}
         }
 
         &.t10 {
